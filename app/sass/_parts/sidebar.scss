@@ -1,0 +1,58 @@
+.sidebar {
+  flex: 1 1 20%;
+  padding: 70px 0;
+}
+
+.sidebar__sidebar-item {
+  width: 265px;
+  border-radius: 2px;
+  background-color: rgb(243, 246, 246);
+  box-shadow: 0 2px 4px 1px rgba(54, 73, 86, 0.35);
+  padding: 25px 15px;
+  margin-bottom: 35px;
+}
+
+.sidebar-item__title {
+  font-size: 1.4rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(33, 33, 33);
+  font-weight: bold;
+  line-height: 1.4rem;
+  text-transform: uppercase;
+}
+
+.tags-list {
+  padding: 0;
+
+  &__item {
+    border: 1px solid rgb(0, 151, 167);
+    border-radius: 5px;
+    list-style: none;
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+
+    &__link {
+      padding: 6px 4px;
+      font-size: 0.9rem;
+      font-family: "Lato", sans-serif;
+      color: rgb(0, 151, 167);
+      line-height: 1.333rem;
+      text-decoration: none;
+    }
+  }
+}
+
+/* список категорий sidebar*/
+.category-list {
+  padding: 0;
+  &__item {
+    list-style: none;
+    &__link {
+      font-size: 1rem;
+      font-family: "Lato", sans-serif;
+      color: rgb(33, 33, 33);
+      line-height: 1.143rem;
+      text-decoration: none;
+    }
+  }
+}

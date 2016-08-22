@@ -1,0 +1,43 @@
+.pagenavi-post-wrap {
+  padding: 10px 0;
+}
+
+.pagenavi-post {
+  &__prev-postlink,
+  &__page,
+  &__next-postlink {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.2rem;
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+    padding: 5px 3px;
+    margin: 0 4px;
+    letter-spacing: 1px;
+    border-radius: 1px;
+    &:hover{
+      color: #ffffff;
+      background: #000;
+    }
+  }
+  &__current {
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    line-height: 1.143rem;
+    text-decoration: none;
+    color: rgb(114, 114, 114);
+    font-weight: bold;
+    padding: 0 3px;
+    margin: 0 3px;
+    letter-spacing: 1px;
+    background-color: #f3f6f6;
+  }
+  &__prev-postlink {
+  }
+  &__page {
+  }
+  &__next-postlink {
+  }
+}
+
