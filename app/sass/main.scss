@@ -7,7 +7,9 @@ html {
 
 img {
   max-width: 100%;
+  width: 100%;
 }
+
 /* main-style content */
 .title-page {
   font-size: 2.3rem;
@@ -34,12 +36,11 @@ p {
 @import "_parts/header.scss";
 @import "_parts/search_form.scss";
 
-
-.main-content{
+.main-content {
   width: 100%;
   position: relative;
   z-index: 20;
-  &:after{
+  &:after {
     background-image: url(../img/triangle-white.png);
     content: '';
     position: absolute;
@@ -50,19 +51,43 @@ p {
     z-index: 5;
   }
 }
+
 .content-wrapper {
-  max-width: 1120px;
+  max-width: 1140px;
   padding: 0 10px;
   margin: 0 auto;
   display: flex;
 }
 
-.content{
+.content {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(114, 114, 114);
+  line-height: 1.4rem;
+  padding: 0 15px;
   margin-bottom: -50px;
   z-index: 10;
 }
 
+ol,
+ul {
+}
+li {
+  margin-bottom: 25px;
+}
+.img_left{
+  float: left;
+  display: block;
+  max-width: 330px;
+  margin: 5px 20px 5px 0;
+}
+.img_right{
+  float: right;
+}
+
+
 @import "_parts/list_posts.scss";
+@import "_parts/article-page.scss";
 /* main-style post*/
 .post-date {
   font-size: 1rem;
@@ -84,5 +109,5 @@ p {
 }
 
 @import "_parts/sidebar.scss";
-@import "_parts/pagination_posts.scss";
+@import "_parts/pagination.scss";
 @import "_parts/footer.scss";
