@@ -27,12 +27,11 @@
   z-index: 10;
 }
 
+/* Footer Menu */
 .bottom-menu{
   flex: 1 1 70%;
   align-items: flex-end;
 }
-
-
 .b-menu__list {
   height: 30px;
   padding: 0 10px;
@@ -65,9 +64,7 @@
   }
 }
 
-
-
-
+/* Copyright */
 .copyright-wrap{
   flex: 1 1 10%;
   height: 45px;

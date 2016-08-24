@@ -12,11 +12,11 @@ img {
 
 /* main-style content */
 .title-page {
-  font-size: 2.3rem;
+  font-size: 2.25rem;
   font-family: "Lato", sans-serif;
   color: rgb(33, 33, 33);
-  line-height: 2.3rem;
-  margin: 2em 0;
+  line-height: 2.8rem;
+  margin: 2em 0 1em;
 }
 
 p {
@@ -31,6 +31,7 @@ p {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @import "_parts/header.scss";
@@ -54,7 +55,7 @@ p {
 
 .content-wrapper {
   max-width: 1140px;
-  padding: 0 10px;
+  padding: 10px 20px 0;
   margin: 0 auto;
   display: flex;
 }
@@ -64,27 +65,39 @@ p {
   font-family: "Lato", sans-serif;
   color: rgb(114, 114, 114);
   line-height: 1.4rem;
-  padding: 0 15px;
-  margin-bottom: -50px;
+  padding: 0 20px;
+  margin-right: 10px;
+  margin-bottom: -10px;
   z-index: 10;
+
+  ul,
+  ol {
+    padding: 0 20px 0;
+    margin: 0;
+    li {
+      padding: 5px 10px;
+    }
+  }
+
+  .img_left {
+    float: left;
+    max-width: 330px;
+    margin: 0 25px 15px;
+    margin-left: 0;
+    vertical-align: top;
+  }
+  .img_right {
+    float: right;
+    max-width: 330px;
+    margin: 0 25px 15px;
+    margin-right: 0;
+    vertical-align: top;
+  }
 }
 
-ol,
-ul {
-}
 li {
   margin-bottom: 25px;
 }
-.img_left{
-  float: left;
-  display: block;
-  max-width: 330px;
-  margin: 5px 20px 5px 0;
-}
-.img_right{
-  float: right;
-}
-
 
 @import "_parts/list_posts.scss";
 @import "_parts/article-page.scss";
@@ -104,8 +117,13 @@ li {
   font-family: "Lato", sans-serif;
   color: rgb(0, 151, 167);
   font-weight: bold;
-  text-decoration: underline;
   line-height: 1.4rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover,
+  &focus{
+    text-decoration: underline;
+  }
 }
 
 @import "_parts/sidebar.scss";

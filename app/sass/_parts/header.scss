@@ -24,7 +24,7 @@
 
 .logotype-block {
   box-sizing: border-box;
-  flex: 1 1 20%;
+  flex: 1 1 10%;
   align-items: center;
   display: flex;
   .logo-wrap {
@@ -41,15 +41,19 @@
 .main-navigation {
   box-sizing: border-box;
   flex: 1 1 70%;
-  padding: 70px 0 20px 25px;
+  padding: 65px 10px 20px 25px;
 }
 
 .nav-list {
-  height: 30px;
+  height: 55px;
+  width: 100%;
+  padding-left: 0;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   &__nav-item {
-    margin: 0 8px 5px;
+    margin: 0 6px 0;
+    padding: 0 5px 0;
     text-align: center;
     &:last-child {
       margin-right: 0;
@@ -64,9 +68,8 @@
       text-transform: uppercase;
       text-decoration: none;
       border-bottom: 3px solid transparent;
-      padding: 6px 0;
+      padding: 4px 0;
       transition: all 0.3s ease;
-
       &:hover,
       &:focus,
       &:active {
@@ -80,7 +83,7 @@
   flex: 1 1 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: 35px 0;
   align-self: flex-end;
   display: flex;
   justify-content: flex-end;

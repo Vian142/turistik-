@@ -43,8 +43,10 @@
 /* pagination posts__end*/
 
 
+
 /* pagination article*/
 .article-pagination{
+  padding: 5px 0 20px;
   display: flex;
   justify-content: space-between;
   &__block{
@@ -57,6 +59,12 @@
       line-height: 1.444rem;
     font-weight: bold;
     text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover,
+    &focus{
+      text-decoration: underline;
+      color: #0097a7;
+    }
   }
 }
 .wrap-pagination-preview{
@@ -113,6 +121,11 @@
         font-family: "Lato", sans-serif;
         color: rgb(0, 151, 167);
         line-height: 1.444rem;
+      text-decoration: none;
+      &:hover,
+      &:focus{
+        text-decoration: underline;
+      }
     }
 
 
