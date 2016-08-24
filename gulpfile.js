@@ -108,6 +108,7 @@ gulp.task('build', ['clean', 'img', 'jade', 'sass', 'scripts'], function () {
     // Переносим библиотеки в продакшен
     var buildCss = gulp.src([
         'app/css/main.css',
+        'app/css/media.css',
         'app/css/libs.min.css'
     ])
         .pipe(cssnano()) // Минификация
